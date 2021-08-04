@@ -88,21 +88,23 @@
         <label for="floatingInput">Teléfono</label>
       </div>
       <div class="w-50 form-floating">
-        <select class="form-select" id="floatingSelect">
-          <option disabled selected>Selecciona el servicio que desea:</option>
-          <option value="1">Colores lisos, brillos, matte, foil, polvos. - $9000</option>
-          <option value="2">Colores lisos, brillos, matte, foil, polvos, un diseño en cada mano. - $10000</option>
-          <option value="3">Colores lisos, brillos, matte, foil, polvos, dos o tres diseños en cada mano. - $12000
+        <!-- <select class="form-select" id="floatingSelect">
+        </select> -->
+        <input class="form-control" list="datalistServicios" id=floatingInput autocomplete="off" placeholder="Seleccione su servicio">
+        <datalist id="datalistServicios">
+          <option data-service="1">Colores lisos, brillos, matte, foil, polvos. - $9000</option>
+          <option data-service="2">Colores lisos, brillos, matte, foil, polvos, un diseño en cada mano. - $10000</option>
+          <option data-service="3">Colores lisos, brillos, matte, foil, polvos, dos o tres diseños en cada mano. - $12000
           </option>
-          <option value="4">Colores lisos, brillos, matte, foil, polvos, cuatro o cinco diseños en cada mano. - $14000
+          <option data-service="4">Colores lisos, brillos, matte, foil, polvos, cuatro o cinco diseños en cada mano. - $14000
           </option>
-          <option value="5">Retiro de esmalte permanente realizado por Mangonails. - $0</option>
-          <option value="6">Retiro de esmalte realizado en otro lugar.- $2000</option>
-          <option value="7">Sólo cuando se agenda para retiro (incluye retiro, limado, cutículas, exfoliación,
+          <option data-service="5">Retiro de esmalte permanente realizado por Mangonails. - $0</option>
+          <option data-service="6">Retiro de esmalte realizado en otro lugar.- $2000</option>
+          <option data-service="7">Sólo cuando se agenda para retiro (incluye retiro, limado, cutículas, exfoliación,
             hidratación y aceite). - $3000</option>
-          <option value="8">Parche de reparación. - $3000</option>
-        </select>
-        <label for="floatingSelect">Seleccione su servicio</label>
+          <option data-service="8">Parche de reparación. - $3000</option>
+        </datalist>
+        <label  for=floatingInput class="form-label">Seleccione su servicio</label>
       </div>
       <div class="w-50 form-floating">
         <input autocomplete="off" type="text" class="form-control" id="fecha" placeholder="dd/mm/aa">
