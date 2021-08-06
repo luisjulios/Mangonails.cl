@@ -129,10 +129,20 @@ a.ui-button:active,
   background-repeat: no-repeat;
   background-size: cover;
   color: #da7f7f;
-  padding: 5em 0 8em 0;
 }
-.body::-webkit-scrollbar {
-  display: none;
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFBCBA;
+  border-radius: 9em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #da7f7f;
+  border-radius: 9em;
 }
 
 .header__logo {
@@ -314,7 +324,7 @@ p::first-letter {
 /* Responsive */
 @media (min-width: 425px) {
   .body {
-    padding: 6em 0 9em 0;
+    padding: 9em 0 9em 0;
   }
 
   .navbar-light .navbar-toggler {
@@ -354,10 +364,6 @@ p::first-letter {
   }
 }
 @media (min-width: 768px) {
-  .body {
-    padding: 7em 0 9em 0;
-  }
-
   .footer {
     display: flex;
     flex-direction: row;

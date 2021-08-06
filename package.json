@@ -1,4 +1,9 @@
-{
+{  
+  "name": "mangonails.cl",
+  "version": "1.0.0",
+  "description":"Sitio web dedicado a empredimiento del cuidado y diseño de las uñas",
+  "main": "app.js",
+  "author": "Luis Julio",
   "dependencies": {
     "bootstrap": "^5.0.2"
   }
