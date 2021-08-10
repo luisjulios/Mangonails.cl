@@ -98,13 +98,29 @@
           </option>
           <option value="4">Colores lisos, brillos, matte, foil, polvos, cuatro o cinco diseños en cada mano. - $14000
           </option>
-          <option value="5">Retiro de esmalte permanente realizado por Mangonails. - $0</option>
-          <option value="6">Retiro de esmalte realizado en otro lugar.- $2000</option>
           <option value="7">Sólo cuando se agenda para retiro (incluye retiro, limado, cutículas, exfoliación,
             hidratación y aceite). - $3000</option>
           <option value="8">Parche de reparación. - $3000</option>
         </select>
         <label for="floatingSelect">Seleccione su servicio</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="retiroEsmalte" id="default" checked>
+        <label class="form-check-label" for="default">
+          Sin retiro de ningún tipo.
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="retiroEsmalte" id="retiroMangonails" value="5">
+        <label class="form-check-label" for="retiroMangonails">
+          Retiro de esmalte permanente realizado por Mangonails. - $0
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="retiroEsmalte" id="retiroOtros" value="6">
+        <label class="form-check-label" for="retiroOtros">
+          Retiro de esmalte realizado en otro lugar.- $2000
+        </label>
       </div>
       <div class="w-50 form-floating">
         <input autocomplete="off" type="text" class="form-control" id="fecha" placeholder="dd/mm/aa">

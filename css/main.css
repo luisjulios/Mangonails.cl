@@ -254,6 +254,11 @@ p::first-letter {
   color: #ffffff;
 }
 
+.form-check-input:checked {
+  background-color: #fd9d99;
+  border-color: #da7f7f;
+}
+
 .btn[type=submit],
 .btn[type=button] {
   cursor: pointer;
@@ -324,7 +329,7 @@ p::first-letter {
 /* Responsive */
 @media (min-width: 425px) {
   .body {
-    padding: 9em 0 7em 0;
+    padding: 9em 0;
   }
 
   .navbar-light .navbar-toggler {
