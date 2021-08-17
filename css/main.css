@@ -129,6 +129,7 @@ a.ui-button:active,
   background-repeat: no-repeat;
   background-size: cover;
   color: #da7f7f;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -236,13 +237,15 @@ p::first-letter {
   height: 11em;
   padding: 1em;
   border-radius: 1.5em;
-  filter: blur(1px);
 }
-.galeria .img-fluid:hover {
-  transform: scale(1.8);
-  transition: all 0.5s linear;
-  z-index: 1;
-  filter: saturate(1.5);
+
+.lightboxOverlay {
+  background-color: #FFBCBA;
+}
+
+.lightbox .lb-image {
+  border: 4px solid #da7f7f;
+  filter: saturate(1.4);
 }
 
 .form-control, .form-select {

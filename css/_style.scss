@@ -16,6 +16,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 color: $color5;
+overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 1em;
@@ -106,15 +107,14 @@ p::first-letter {
   height: 11em;
   padding: 1em;
   border-radius: 1.5em;
-  filter: blur(1px);
-  &:hover {
-    transform: scale(1.8);
-    transition: all 0.5s linear;
-    z-index: 1;
-    filter: saturate(1.5);
-  }
 }
-
+.lightboxOverlay {
+  background-color: $color3;
+}
+.lightbox .lb-image {
+  border: 4px solid $color5;
+  filter: saturate(1.4);
+}
 .form-control, .form-select {
   font-family: 'Roboto', sans-serif;
   border-radius: 0 1.5em;
