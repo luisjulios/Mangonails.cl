@@ -109,13 +109,6 @@ p::first-letter {
   border-radius: 1.5em;
   filter: saturate(1.4);
 }
-.lightboxOverlay {
-  background-color: $color3;
-}
-.lightbox .lb-image {
-  border: 9px solid $color5;
-  filter: saturate(1.4);
-}
 .form-control, .form-select {
   font-family: 'Roboto', sans-serif;
   border-radius: 0 1.5em;

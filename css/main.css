@@ -240,15 +240,6 @@ p::first-letter {
   filter: saturate(1.4);
 }
 
-.lightboxOverlay {
-  background-color: #FFBCBA;
-}
-
-.lightbox .lb-image {
-  border: 9px solid #da7f7f;
-  filter: saturate(1.4);
-}
-
 .form-control, .form-select {
   font-family: "Roboto", sans-serif;
   border-radius: 0 1.5em;

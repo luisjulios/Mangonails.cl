@@ -25,10 +25,14 @@
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Marcellus&family=Roboto&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Marcellus&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
   <script src="js/bootstrap.min.js"></script>
   <title>Mangonails.cl - Inicio</title>
 </head>
@@ -37,7 +41,7 @@
   <header id="desvanecer" class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a href="index.html"><img class="giro header__logo img" src="img/logo.webp" alt="logo">
+        <a href="index.html" class="animate__animated animate__slideInLeft"><img class="giro header__logo img" src="img/logo.webp" alt="logo">
           <h1 class="phrase">Mangonails.cl es
             <span class="words">
               <i>belleza</i>
@@ -52,7 +56,7 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end animate__animated animate__slideInRight" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="header__nav__a nav-link text-center pActual" href="index.html">Inicio</a>
             </li>
@@ -69,8 +73,8 @@
       </div>
     </nav>
   </header>
-  <main class="container m-auto" id="desvanecer">
-    <section class="section col-lg-11 col-md-9 m-3 m-auto p-2">
+  <main class="container m-auto">
+    <section class="section col-lg-11 col-md-9 m-3 m-auto p-2 animate__animated animate__slideInLeft">
       <div id="carouselExampleFade " class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -88,7 +92,7 @@
         un poco nido de certezas donde posar mis manos cuando están cansadas." <br>
         – Fabrizio Caramagna</p>
     </section>
-    <section class="section giftcard col-lg-11 col-md-9 mt-5 m-auto d-flex flex-column align-items-center p-2">
+    <section class="section giftcard col-lg-11 col-md-9 mt-5 m-auto d-flex flex-column align-items-center p-2 animate__animated animate__slideInRight">
       <h2 class="text-center">Gift Card</h2>
       <p class="text-center p-0">El mejor regalo que te puedes dar.</p>
       <p class="text-center px-5">Por la compra de una gift card obtén excelentes descuentos en los servicios, puedes
@@ -98,7 +102,7 @@
       <img src="img/giftcard1.jpg" alt="giftCard" class="section__giftcard__img img d-block img-fluid m-auto">
       <input type="button" class="btn mb-3" value="Comprar">
     </section>
-    <section id="servicios" class="section col-lg-11 col-md-9 mt-5 m-auto d-flex flex-column align-items-center p-2">
+    <section id="servicios" class="section col-lg-11 col-md-9 mt-5 m-auto d-flex flex-column align-items-center p-2 animate__animated animate__slideInLeft">
       <h2>Listado de servicios</h2>
       <ul class="text-center section_listado">
         <li class="section__listado--servicio">Colores lisos, brillos, matte, foil, polvos. - $9000</li>
@@ -118,7 +122,7 @@
       <strong class="text-center text-break p-2">Si desea realizar una reserva, ve al siguiente enlace: <a
           href="reservas.html" class="section__strong__a">Reservas</a></strong>
     </section>
-    <section class="section col-lg-11 col-md-9 mt-5 m-auto d-flex flex-column align-items-center p-3">
+    <section class="section col-lg-11 col-md-9 mt-5 m-auto d-flex flex-column align-items-center p-3 animate__animated animate__slideInRight">
       <h2>Newsletter</h2>
       <p class="text-center p-3">Suscríbete a nuestro newsletter y no te pierdas de nuestros descuentos y lanzamiento de
         productos!</p>

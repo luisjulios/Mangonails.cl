@@ -74,24 +74,24 @@
     <p class="text-center">Puedes ingresar cualquier consulta, duda, sugerencia o felicitaciones, o directamente por
       nuestras redes
       sociales. </p>
-    <form class="d-flex flex-column align-items-center" action="#">
+    <form class="d-flex flex-column align-items-center" action="enviar.php" method="POST">
       <div class="w-50 form-floating">
-        <input autocomplete="off" type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
+        <input name="nombre-apellido" autocomplete="off" type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
         <label for="floatingInput">Nombre y Apellido</label>
       </div>
       <div class="w-50 form-floating">
-        <input autocomplete="off" type="email" class="form-control" id="floatingInput" placeholder="Email">
+        <input name="email" autocomplete="off" type="email" class="form-control" id="floatingInput" placeholder="Email">
         <label for="floatingInput">Email</label>
       </div>
       <div class="w-50 form-floating">
-        <input autocomplete="off" type="tel" class="form-control" id="floatingInput" placeholder="Teléfono">
+        <input name="telefono" autocomplete="off" type="tel" class="form-control" id="floatingInput" placeholder="Teléfono">
         <label for="floatingInput">Teléfono</label>
       </div>
       <div class="w-50 form-floating">
-        <textarea class="form-control" id="mensaje" style="height: 100px" placeholder="Escriba su mensaj"></textarea>
+        <textarea name="mensaje" class="form-control" id="mensaje" style="height: 100px" placeholder="Escriba su mensaje"></textarea>
         <label for="mensaje">Escriba su mensaje</label>
       </div>
-      <input type="submit" class="btn" value="Enviar">
+      <input type="submit" class="btn" id="btnEnviar" value="Enviar">
     </form>
   </section>
   <footer class="footer mt-4 py-3 bg-white container-fluid" id="desvanecer">
