@@ -237,6 +237,7 @@ p::first-letter {
   height: 11em;
   padding: 1em;
   border-radius: 1.5em;
+  filter: saturate(1.4);
 }
 
 .lightboxOverlay {
@@ -244,7 +245,7 @@ p::first-letter {
 }
 
 .lightbox .lb-image {
-  border: 4px solid #da7f7f;
+  border: 9px solid #da7f7f;
   filter: saturate(1.4);
 }
 
