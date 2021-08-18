@@ -5,6 +5,8 @@ $email = $_POST["email"];
 $telefono = $_POST["telefono"];
 $mensaje = $_POST["mensaje"];
 
-$contenido = "nombre"
+$contenido = "Nombre y apellido: " . $nombre_apellido . "\nCorreo: " .  $email . "\nTeléfono: " . $telefono . "\nMensaje: " . $mensaje;
 
+mail($destinatario, "Mensaje enviado desde la página de Mangonails.cl", $contenido);
+header("location:gracias.html");
 ?>

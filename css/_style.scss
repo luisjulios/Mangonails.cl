@@ -66,9 +66,20 @@ h2 {
   font-family: 'Marcellus', serif;
   color: $color5;
 }
-p::first-letter {
+p::first-letter, blockquote::first-letter {
   font-size: 2em;
   font-weight: bold;
+}
+.quote::before{
+  content: "\275D";
+  color: $color3;
+  font-size: 1em;
+}
+.quote::after{
+  content: "\275E";
+  color: $color3;
+  font-size: 2em;
+
 }
 .img {
   max-width: 100%;

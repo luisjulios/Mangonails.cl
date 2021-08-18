@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -189,9 +190,21 @@ h2 {
   color: #da7f7f;
 }
 
-p::first-letter {
+p::first-letter, blockquote::first-letter {
   font-size: 2em;
   font-weight: bold;
+}
+
+.quote::before {
+  content: "❝";
+  color: #FFBCBA;
+  font-size: 1em;
+}
+
+.quote::after {
+  content: "❞";
+  color: #FFBCBA;
+  font-size: 2em;
 }
 
 .img {
