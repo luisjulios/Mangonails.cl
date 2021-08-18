@@ -76,19 +76,19 @@
       sociales. </p>
     <form class="d-flex flex-column align-items-center" action="enviar.php" method="POST">
       <div class="w-50 form-floating">
-        <input name="nombre-apellido" autocomplete="off" type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
+        <input required name="nombre_apellido" autocomplete="off" type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
         <label for="floatingInput">Nombre y Apellido</label>
       </div>
       <div class="w-50 form-floating">
-        <input name="email" autocomplete="off" type="email" class="form-control" id="floatingInput" placeholder="Email">
+        <input required name="email" autocomplete="off" type="email" class="form-control" id="floatingInput" placeholder="Email">
         <label for="floatingInput">Email</label>
       </div>
       <div class="w-50 form-floating">
-        <input name="telefono" autocomplete="off" type="tel" class="form-control" id="floatingInput" placeholder="Teléfono">
+        <input required name="telefono" autocomplete="off" type="tel" class="form-control" id="floatingInput" placeholder="Teléfono">
         <label for="floatingInput">Teléfono</label>
       </div>
       <div class="w-50 form-floating">
-        <textarea name="mensaje" class="form-control" id="mensaje" style="height: 100px" placeholder="Escriba su mensaje"></textarea>
+        <textarea required name="mensaje" class="form-control" id="mensaje" style="height: 100px" placeholder="Escriba su mensaje"></textarea>
         <label for="mensaje">Escriba su mensaje</label>
       </div>
       <input type="submit" class="btn" id="btnEnviar" value="Enviar">
