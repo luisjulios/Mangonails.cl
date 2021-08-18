@@ -231,7 +231,7 @@ p::first-letter, blockquote::first-letter {
 }
 
 .section {
-  background-color: #ffffffaf;
+  background-color: #ffffff7b;
   border-radius: 2em;
   line-height: 1.5em;
 }
@@ -315,22 +315,22 @@ p::first-letter, blockquote::first-letter {
   transition: all 0.5s;
 }
 
-.section__404 {
+.section__404, .gracias {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
-  background-color: #ffffffaf;
+  background-color: #ffffff7b;
   border-radius: 2em;
 }
-.section__404 .p404 {
+.section__404 .p404, .gracias .p404 {
   width: 9em;
   height: 9em;
   animation: 10s giro infinite;
 }
-.section__404 .enlace {
+.section__404 .enlace, .gracias .enlace {
   color: #da7f7f;
 }
 

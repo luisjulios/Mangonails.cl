@@ -195,6 +195,9 @@ p::first-letter, blockquote::first-letter {
     color: $color5;
   }
 }
+.gracias {
+  @extend .section__404;
+}
 /* Responsive */
 @media (min-width: 425px) {
   .body {
