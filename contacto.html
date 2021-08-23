@@ -69,36 +69,38 @@
       </div>
     </nav>
   </header>
-  <section id="desvanecer" class="section container col-lg-12 col-md-11 m-3 p-4 m-auto">
-    <h2 class="text-center">Contacto</h2>
-    <p class="text-center">Puedes ingresar cualquier consulta, duda, sugerencia o felicitaciones, o directamente por
-      nuestras redes
-      sociales. </p>
-    <form class="d-flex flex-column align-items-center" action="enviar.php" method="POST">
-      <div class="w-75 form-floating">
-        <input required name="nombre_apellido" autocomplete="off" type="text" class="form-control" id="floatingInput"
-          placeholder="Nombre y Apellido">
-        <label for="floatingInput">Nombre y Apellido</label>
-      </div>
-      <div class="w-75 form-floating">
-        <input required name="email" autocomplete="off" type="email" class="form-control" id="floatingInput"
-          placeholder="Email">
-        <label for="floatingInput">Email</label>
-      </div>
-      <div class="w-75 form-floating">
-        <input required name="telefono" autocomplete="off" type="tel" class="form-control" id="floatingInput"
-          placeholder="Teléfono">
-        <label for="floatingInput">Teléfono</label>
-      </div>
-      <div class="w-75 form-floating">
-        <textarea required name="mensaje" class="form-control" id="mensaje" style="height: 100px"
-          placeholder="Escriba su mensaje"></textarea>
-        <label for="mensaje">Escriba su mensaje</label>
-      </div>
-      <input type="submit" class="btn" id="btnEnviar" value="Enviar">
-    </form>
-  </section>
-  <footer class="footer mt-4 py-3 bg-white container-fluid" id="desvanecer">
+  <main class="container m-auto">
+    <section id="desvanecer" class="section container col-lg-12 col-md-11 m-3 p-4 m-auto">
+      <h2 class="text-center">Contacto</h2>
+      <p class="text-center">Puedes ingresar cualquier consulta, duda, sugerencia o felicitaciones, o directamente por
+        nuestras redes
+        sociales. </p>
+      <form class="d-flex flex-column align-items-center" action="enviar.php" method="POST">
+        <div class="w-75 form-floating">
+          <input required name="nombre_apellido" autocomplete="off" type="text" class="form-control" id="floatingInput"
+            placeholder="Nombre y Apellido">
+          <label for="floatingInput">Nombre y Apellido</label>
+        </div>
+        <div class="w-75 form-floating">
+          <input required name="email" autocomplete="off" type="email" class="form-control" id="floatingInput"
+            placeholder="Email">
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="w-75 form-floating">
+          <input required name="telefono" autocomplete="off" type="tel" class="form-control" id="floatingInput"
+            placeholder="Teléfono">
+          <label for="floatingInput">Teléfono</label>
+        </div>
+        <div class="w-75 form-floating">
+          <textarea required name="mensaje" class="form-control" id="mensaje" style="height: 100px"
+            placeholder="Escriba su mensaje"></textarea>
+          <label for="mensaje">Escriba su mensaje</label>
+        </div>
+        <input type="submit" class="btn" id="btnEnviar" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer class="footer py-3 bg-white container-fluid" id="desvanecer">
     <div>
       <p class="footer__p text-center">Mangonails.cl 2021 &copy; - Todos los derechos reservados.</p>
     </div>

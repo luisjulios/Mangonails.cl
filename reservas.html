@@ -73,76 +73,79 @@
       </div>
     </nav>
   </header>
-  <section id="desvanecer" class="section reservas container col-lg-12 col-md-11 m-3 p-4 m-auto">
-    <h2 class="text-center">Tus datos y cita</h2>
-    <p class="text-center">Ingresa tus datos y reserva una hora con nosotros:</p>
-    <form class="d-flex flex-column align-items-center" action="#">
-      <div class="w-75 form-floating">
-        <input autocomplete="off" type="text" class="form-control" id="nombre_apellido" placeholder="Nombre y Apellido">
-        <label for="nombre_apellido">Nombre y Apellido</label>
-      </div>
-      <div class="w-75 form-floating">
-        <input autocomplete="off" type="email" class="form-control" id="email" placeholder="Email">
-        <label for="email">Email</label>
-      </div>
-      <div class="w-75 form-floating">
-        <input autocomplete="off" type="tel" class="form-control" id="telefono" placeholder="Teléfono">
-        <label for="telefono">Teléfono</label>
-      </div>
-      <div class="w-75 form-floating">
-        <select class="form-select" id="servicio">
-          <option disabled selected>Selecciona el servicio que desea:</option>
-          <option value="1">Colores lisos, brillos, matte, foil, polvos. - $10000</option>
-          <option value="2">Colores lisos, brillos, matte, foil, polvos, un diseño en cada mano. - $12000</option>
-          <option value="3">Colores lisos, brillos, matte, foil, polvos, dos o tres diseños en cada mano. - $13000
-          </option>
-          <option value="4">Colores lisos, brillos, matte, foil, polvos, cuatro o cinco diseños en cada mano. - $15000
-          </option>
-          <option value="5">Sólo cuando se agenda para retiro (incluye retiro, limado, cutículas, exfoliación,
-            hidratación y aceite). - $3000</option>
-          <option value="6">Parche de reparación. - $3000</option>
-          <option value="7">Incrustaciones, perlas, accesorios, circones. - $500</option>
-        </select>
-        <label for="servicio">Seleccione su servicio</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="retiroEsmalte" id="default" checked>
-        <label class="form-check-label" for="default">
-          Sin retiro de ningún tipo.
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="retiroEsmalte" id="retiroMangonails" value="5">
-        <label class="form-check-label" for="retiroMangonails">
-          Retiro de esmalte realizado por Mangonails. - $GRATIS
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="retiroEsmalte" id="retiroOtros" value="6">
-        <label class="form-check-label" for="retiroOtros">
-          Retiro de esmalte realizado en otro lugar.- $3000
-        </label>
-      </div>
-      <div class="w-75 form-floating">
-        <input autocomplete="off" type="text" class="form-control" id="fecha" placeholder="dd/mm/aa">
-        <label for="fecha">Fecha</label>
-      </div>
-      <div class="w-75 form-floating">
-        <select class="form-select" id="hora">
-          <option disabled selected>Selecciona la hora de tu cita</option>
-          <option value="12:00:00">10:30 am</option>
-          <option value="15:00:00">2:30 pm</option>
-          <option value="18:00:00">5:30 pm</option>
-        </select>
-        <label for="hora">Seleccione la hora de tu cita</label>
-      </div>
-      <div>
-        <span>Se requiere el abono de $3000, que se descontarán del total del valor del servicio.</span>
-      </div>
-      <input type="submit" class="btn" value="Reservar hora">
-    </form>
-  </section>
-  <footer class="footer mt-4 py-3 bg-white container-fluid" id="desvanecer">
+  <main class="container m-auto">
+    <section id="desvanecer" class="section reservas container col-lg-12 col-md-11 m-3 p-4 m-auto">
+      <h2 class="text-center">Tus datos y cita</h2>
+      <p class="text-center">Ingresa tus datos y reserva una hora con nosotros:</p>
+      <form class="d-flex flex-column align-items-center" action="#">
+        <div class="w-75 form-floating">
+          <input autocomplete="off" type="text" class="form-control" id="nombre_apellido"
+            placeholder="Nombre y Apellido">
+          <label for="nombre_apellido">Nombre y Apellido</label>
+        </div>
+        <div class="w-75 form-floating">
+          <input autocomplete="off" type="email" class="form-control" id="email" placeholder="Email">
+          <label for="email">Email</label>
+        </div>
+        <div class="w-75 form-floating">
+          <input autocomplete="off" type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+          <label for="telefono">Teléfono</label>
+        </div>
+        <div class="w-75 form-floating">
+          <select class="form-select" id="servicio">
+            <option disabled selected>Selecciona el servicio que desea:</option>
+            <option value="1">Colores lisos, brillos, matte, foil, polvos. - $10000</option>
+            <option value="2">Colores lisos, brillos, matte, foil, polvos, un diseño en cada mano. - $12000</option>
+            <option value="3">Colores lisos, brillos, matte, foil, polvos, dos o tres diseños en cada mano. - $13000
+            </option>
+            <option value="4">Colores lisos, brillos, matte, foil, polvos, cuatro o cinco diseños en cada mano. - $15000
+            </option>
+            <option value="5">Sólo cuando se agenda para retiro (incluye retiro, limado, cutículas, exfoliación,
+              hidratación y aceite). - $3000</option>
+            <option value="6">Parche de reparación. - $3000</option>
+            <option value="7">Incrustaciones, perlas, accesorios, circones. - $500</option>
+          </select>
+          <label for="servicio">Seleccione su servicio</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="retiroEsmalte" id="default" checked>
+          <label class="form-check-label" for="default">
+            Sin retiro de ningún tipo.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="retiroEsmalte" id="retiroMangonails" value="5">
+          <label class="form-check-label" for="retiroMangonails">
+            Retiro de esmalte realizado por Mangonails. - $GRATIS
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="retiroEsmalte" id="retiroOtros" value="6">
+          <label class="form-check-label" for="retiroOtros">
+            Retiro de esmalte realizado en otro lugar.- $3000
+          </label>
+        </div>
+        <div class="w-75 form-floating">
+          <input autocomplete="off" type="text" class="form-control" id="fecha" placeholder="dd/mm/aa">
+          <label for="fecha">Fecha</label>
+        </div>
+        <div class="w-75 form-floating">
+          <select class="form-select" id="hora">
+            <option disabled selected>Selecciona la hora de tu cita</option>
+            <option value="12:00:00">10:30 am</option>
+            <option value="15:00:00">2:30 pm</option>
+            <option value="18:00:00">5:30 pm</option>
+          </select>
+          <label for="hora">Seleccione la hora de tu cita</label>
+        </div>
+        <div>
+          <span>Se requiere el abono de $3000, que se descontarán del total del valor del servicio.</span>
+        </div>
+        <input type="submit" class="btn" value="Reservar hora">
+      </form>
+    </section>
+  </main>
+  <footer class="footer py-3 bg-white container-fluid" id="desvanecer">
     <div>
       <p class="footer__p text-center">Mangonails.cl 2021 &copy; - Todos los derechos reservados.</p>
     </div>
