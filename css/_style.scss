@@ -17,7 +17,6 @@ background-repeat: no-repeat;
 background-size: cover;
 color: $color5;
 overflow-x: hidden;
-padding-top: 9em;
 display: flex;
 flex-direction: column;
 }
@@ -214,6 +213,9 @@ p::first-letter, blockquote::first-letter {
 }
 /* Responsive */
 @media (min-width: 425px) {
+  .body {
+    padding-top: 6em;
+  }
   .navbar-light .navbar-toggler {
     border-color: $color3;
   }
@@ -266,14 +268,14 @@ p::first-letter, blockquote::first-letter {
   }
   }
 @media (min-width: 992px) { 
+  .body {
+    padding-top: 9em;
+  }
   .header__nav__a:hover {
     transform: scale(1.1);
   }
   .phrase {
     display: flex;
-  }
-  .container-fluid {
-    padding: 0 5.5em;
   }
   .section__giftcard__img {
     width: 30%;
