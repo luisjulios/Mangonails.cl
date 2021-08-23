@@ -38,7 +38,7 @@
   <header id="desvanecer" class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a href="index.html"><img class="giro header__logo img" src="img/logo.webp" alt="logo">
+        <a href="index.html" class="logo"><img class="giro header__logo img" src="img/logo.webp" alt="logo">
           <h1 class="phrase">Mangonails.cl es
             <span class="words">
               <i>belleza</i>
@@ -49,7 +49,7 @@
             </span>
           </h1>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -75,20 +75,24 @@
       nuestras redes
       sociales. </p>
     <form class="d-flex flex-column align-items-center" action="enviar.php" method="POST">
-      <div class="w-50 form-floating">
-        <input required name="nombre_apellido" autocomplete="off" type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
+      <div class="w-75 form-floating">
+        <input required name="nombre_apellido" autocomplete="off" type="text" class="form-control" id="floatingInput"
+          placeholder="Nombre y Apellido">
         <label for="floatingInput">Nombre y Apellido</label>
       </div>
-      <div class="w-50 form-floating">
-        <input required name="email" autocomplete="off" type="email" class="form-control" id="floatingInput" placeholder="Email">
+      <div class="w-75 form-floating">
+        <input required name="email" autocomplete="off" type="email" class="form-control" id="floatingInput"
+          placeholder="Email">
         <label for="floatingInput">Email</label>
       </div>
-      <div class="w-50 form-floating">
-        <input required name="telefono" autocomplete="off" type="tel" class="form-control" id="floatingInput" placeholder="Teléfono">
+      <div class="w-75 form-floating">
+        <input required name="telefono" autocomplete="off" type="tel" class="form-control" id="floatingInput"
+          placeholder="Teléfono">
         <label for="floatingInput">Teléfono</label>
       </div>
-      <div class="w-50 form-floating">
-        <textarea required name="mensaje" class="form-control" id="mensaje" style="height: 100px" placeholder="Escriba su mensaje"></textarea>
+      <div class="w-75 form-floating">
+        <textarea required name="mensaje" class="form-control" id="mensaje" style="height: 100px"
+          placeholder="Escriba su mensaje"></textarea>
         <label for="mensaje">Escriba su mensaje</label>
       </div>
       <input type="submit" class="btn" id="btnEnviar" value="Enviar">
@@ -109,8 +113,8 @@
     <div class="footer__rrss">
       <a href="https://api.whatsapp.com/send?phone=+56958894945" target="_blank"><i
           class="footer__rrss__icono fa fa-whatsapp"></i></a>
-      <a href="https://www.instagram.com/mangonails.cl/" target="_blank"><i class="footer__rrss__icono fa fa-instagram"
-          ></i></a>
+      <a href="https://www.instagram.com/mangonails.cl/" target="_blank"><i
+          class="footer__rrss__icono fa fa-instagram"></i></a>
       <a href="https://www.facebook.com/Mangonailscl-105357094763501" target="_blank"><i
           class="footer__rrss__icono fa fa-facebook-f"></i></a>
     </div>

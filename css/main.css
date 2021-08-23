@@ -131,6 +131,9 @@ a.ui-button:active,
   background-size: cover;
   color: #da7f7f;
   overflow-x: hidden;
+  padding-top: 9em;
+  display: flex;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
@@ -156,7 +159,12 @@ a.ui-button:active,
 }
 
 .nav-item {
-  padding: 0.5em;
+  padding: 0.5em 0;
+  margin: auto 1em;
+}
+
+ul .navbar-nav {
+  margin: auto;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -171,7 +179,6 @@ a.ui-button:active,
   background-color: #FFBCBA;
   color: #ffffff;
   border-radius: 0 1.9em;
-  margin-right: 1em;
 }
 .header__nav__a:hover {
   background-color: #fd9d99;
@@ -218,14 +225,14 @@ p::first-letter, blockquote::first-letter {
   width: 20em;
 }
 
-.section__strong__a {
+.section__a {
   background-color: #FFBCBA;
   color: #ffffff;
   font-weight: 700;
   padding: 0.3em;
   border-radius: 0 1em;
 }
-.section__strong__a:hover {
+.section__a:hover {
   color: #ffffff;
   background-color: #fd9d99;
 }
@@ -241,13 +248,13 @@ p::first-letter, blockquote::first-letter {
 }
 
 .section__sobremi__img {
-  width: 40%;
-  height: 40%;
+  width: 20em;
+  height: 20em;
 }
 
 .galeria .img-fluid {
-  width: 11em;
-  height: 11em;
+  width: 15em;
+  height: 15em;
   padding: 1em;
   border-radius: 1.5em;
   filter: saturate(1.4);
@@ -275,7 +282,7 @@ p::first-letter, blockquote::first-letter {
   border-radius: 0 1em;
   border: none;
   background-color: #FFBCBA;
-  width: auto;
+  width: 75%;
   height: 3em;
   margin-top: 1em;
 }
@@ -287,15 +294,20 @@ p::first-letter, blockquote::first-letter {
   transition: all 0.9s;
 }
 
+.section a .btn {
+  width: 22em;
+}
+
 .footer {
   width: 100%;
-  position: fixed;
-  bottom: 0;
   display: flex;
+  position: absolute;
+  bottom: 0;
   justify-content: space-evenly;
   align-items: center;
   font-size: 1em;
   z-index: 1;
+  height: 5em;
 }
 .footer .footer__p a {
   color: #da7f7f;
@@ -336,10 +348,6 @@ p::first-letter, blockquote::first-letter {
 
 /* Responsive */
 @media (min-width: 425px) {
-  .body {
-    padding: 9em 0;
-  }
-
   .navbar-light .navbar-toggler {
     border-color: #FFBCBA;
   }
@@ -348,8 +356,16 @@ p::first-letter, blockquote::first-letter {
     box-shadow: none;
   }
 
+  .logo {
+    margin: auto;
+  }
+
   .header__nav__a:hover {
     transform: scale(1);
+  }
+
+  .phrase {
+    display: none;
   }
 
   .section__listado--servicio {
@@ -361,11 +377,17 @@ p::first-letter, blockquote::first-letter {
     height: 50%;
   }
 
+  .form-select option {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
   .footer {
     display: flex;
     flex-direction: column;
+    position: static;
     font-size: 0.8em;
-    height: 10em;
+    height: auto;
   }
   .footer .footer__p {
     margin: 0em;
@@ -380,7 +402,6 @@ p::first-letter, blockquote::first-letter {
   .footer {
     display: flex;
     flex-direction: row;
-    height: 8em;
   }
 
   .sobreMi {
@@ -393,12 +414,12 @@ p::first-letter, blockquote::first-letter {
     transform: scale(1.1);
   }
 
-  .container-fluid {
-    padding: 0 5.5em;
+  .phrase {
+    display: flex;
   }
 
-  .footer {
-    height: 5em;
+  .container-fluid {
+    padding: 0 5.5em;
   }
 
   .section__giftcard__img {

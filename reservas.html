@@ -42,7 +42,7 @@
   <header id="desvanecer" class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a href="index.html"><img class="giro header__logo img" src="img/logo.webp" alt="logo">
+        <a href="index.html" class="logo"><img class="giro header__logo img" src="img/logo.webp" alt="logo">
           <h1 class="phrase">Mangonails.cl es
             <span class="words">
               <i>belleza</i>
@@ -53,7 +53,7 @@
             </span>
           </h1>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -77,20 +77,20 @@
     <h2 class="text-center">Tus datos y cita</h2>
     <p class="text-center">Ingresa tus datos y reserva una hora con nosotros:</p>
     <form class="d-flex flex-column align-items-center" action="#">
-      <div class="w-50 form-floating">
-        <input autocomplete="off" type="text" class="form-control" id="floatingInput" placeholder="Nombre y Apellido">
-        <label for="floatingInput">Nombre y Apellido</label>
+      <div class="w-75 form-floating">
+        <input autocomplete="off" type="text" class="form-control" id="nombre_apellido" placeholder="Nombre y Apellido">
+        <label for="nombre_apellido">Nombre y Apellido</label>
       </div>
-      <div class="w-50 form-floating">
-        <input autocomplete="off" type="email" class="form-control" id="floatingInput" placeholder="Email">
-        <label for="floatingInput">Email</label>
+      <div class="w-75 form-floating">
+        <input autocomplete="off" type="email" class="form-control" id="email" placeholder="Email">
+        <label for="email">Email</label>
       </div>
-      <div class="w-50 form-floating">
-        <input autocomplete="off" type="tel" class="form-control" id="floatingInput" placeholder="Teléfono">
-        <label for="floatingInput">Teléfono</label>
+      <div class="w-75 form-floating">
+        <input autocomplete="off" type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+        <label for="telefono">Teléfono</label>
       </div>
-      <div class="w-50 form-floating">
-        <select class="form-select" id="floatingSelect">
+      <div class="w-75 form-floating">
+        <select class="form-select" id="servicio">
           <option disabled selected>Selecciona el servicio que desea:</option>
           <option value="1">Colores lisos, brillos, matte, foil, polvos. - $10000</option>
           <option value="2">Colores lisos, brillos, matte, foil, polvos, un diseño en cada mano. - $12000</option>
@@ -103,7 +103,7 @@
           <option value="6">Parche de reparación. - $3000</option>
           <option value="7">Incrustaciones, perlas, accesorios, circones. - $500</option>
         </select>
-        <label for="floatingSelect">Seleccione su servicio</label>
+        <label for="servicio">Seleccione su servicio</label>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="retiroEsmalte" id="default" checked>
@@ -123,17 +123,16 @@
           Retiro de esmalte realizado en otro lugar.- $3000
         </label>
       </div>
-      <div class="w-50 form-floating">
+      <div class="w-75 form-floating">
         <input autocomplete="off" type="text" class="form-control" id="fecha" placeholder="dd/mm/aa">
         <label for="fecha">Fecha</label>
       </div>
-      <div class="w-50 form-floating">
+      <div class="w-75 form-floating">
         <select class="form-select" id="hora">
           <option disabled selected>Selecciona la hora de tu cita</option>
-          <option value="10:30:00">10:30 am</option>
-          <option value="14:30:00">2:30 pm</option>
-          <option value="17:30:00">5:30 pm</option>
-          <option value="19:15:00">7:15 pm</option>
+          <option value="12:00:00">10:30 am</option>
+          <option value="15:00:00">2:30 pm</option>
+          <option value="18:00:00">5:30 pm</option>
         </select>
         <label for="hora">Seleccione la hora de tu cita</label>
       </div>
@@ -158,8 +157,8 @@
     <div class="footer__rrss">
       <a href="https://api.whatsapp.com/send?phone=+56958894945" target="_blank"><i
           class="footer__rrss__icono fa fa-whatsapp"></i></a>
-      <a href="https://www.instagram.com/mangonails.cl/" target="_blank"><i class="footer__rrss__icono fa fa-instagram"
-          ></i></a>
+      <a href="https://www.instagram.com/mangonails.cl/" target="_blank"><i
+          class="footer__rrss__icono fa fa-instagram"></i></a>
       <a href="https://www.facebook.com/Mangonailscl-105357094763501" target="_blank"><i
           class="footer__rrss__icono fa fa-facebook-f"></i></a>
     </div>
